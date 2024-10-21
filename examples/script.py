@@ -5,5 +5,10 @@ print("hello " + name + "!")
 message = "hello"
 print(message)
 
-puctuation_message = message + "!"
-print(puctuation_message)
+punctuation_message = message + "!"
+print(punctuation_message)
+
+multiline_str = """- Hello!
+- Hi!
+"""
+print(multiline_str)
