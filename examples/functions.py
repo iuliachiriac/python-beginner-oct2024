@@ -1,3 +1,6 @@
+X = 4
+
+
 def welcome(name: str, age: int, is_student: bool = False, hobbies: list = None):
     if not isinstance(name, str):
         print("Error! name is not a string!!")
@@ -10,10 +13,7 @@ def welcome(name: str, age: int, is_student: bool = False, hobbies: list = None)
             print(f" - {hobby}")
 
 
-welcome(10, 20)
-
-
-def welcome(name, age, is_student=False, hobbies=None):
+def welcome_2(name, age, is_student=False, hobbies=None):
     print(f"{name} is {age} years old.")
     if is_student:
         print(f"{name} is a student.")
@@ -23,10 +23,12 @@ def welcome(name, age, is_student=False, hobbies=None):
             print(f" - {hobby}")
 
 
-welcome("Ana", 21, hobbies=[])
+if __name__ == "__main__":
+    welcome(10, 20)
+    welcome("Ana", 21, hobbies=[])
 
-lst = [200, 7, 56456, 45, 1, 2, 3]
-list_length = len(lst)
-print(len(lst))
-print(list_length)
-print(7)
+    lst = [200, 7, 56456, 45, 1, 2, 3]
+    list_length = len(lst)
+    print(len(lst))
+    print(list_length)
+    print(7)
